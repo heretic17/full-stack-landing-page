@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import api from './api'; // Import the Axios instance
 import HomePage from './pages/HomePage';
 import NotFound from './pages/NotFound'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ItemPage from './pages/ItemPage';
 
 function App() {

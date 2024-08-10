@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { Props } from '../types';
 
-function ItemPage({ data }) {
+function ItemPage({ data }: Props) {
     const { id } = useParams();
     const itemId = parseInt(id, 10);
     const item = data.find(item => item.id === itemId);

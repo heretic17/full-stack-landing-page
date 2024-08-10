@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
+import { Props } from '../types'
 
-function Item({ data }) {
+function Item({ data }: Props) {
   const navigate = useNavigate();
 
-  const handleRowClick = (id) => {
+  const handleRowClick = (id: number) => {
     console.log(`Navigating to item with id: ${id}`); // Debugging statement
     navigate(`/item/${id}`); // Adjust path to match your routing
   };
