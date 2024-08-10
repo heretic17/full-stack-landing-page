@@ -39,7 +39,6 @@ function Item({ data }) {
                   <span key={tagIndex} className="tag">{tag}</span>
                 ))}
               </div>
-              <a href="#" className="btn btn-primary">Add to Cart</a>
             </div>
           </div>
         </div>
