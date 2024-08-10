@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function ItemPage({ data }) {
@@ -19,10 +19,12 @@ function ItemPage({ data }) {
             <img className="item-cover" key={index} src={img.image} alt={`item ${item.title} image ${index}`} />
           ))}
         </div>
-        <h3>Genre: </h3> <p>{item.genre}</p>
         <h3>Author: </h3> <p>{item.author.username}</p>
         <h3>Description: </h3> <p>{item.description}</p>
+        <h3>Tags: </h3> <p>{item.tags}</p>
       </div>
+      <button>Add to Cart</button>
+      <Link className='link-home' to={'/'}>Back</Link>
     </>
     );
 }
